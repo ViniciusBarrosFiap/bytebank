@@ -10,6 +10,6 @@ test('Deve rederizar o componente extrato', () => {
     ]
     
     render(<Extrato transacoes={transacoes}/>);
-    const lista = screen.getByRole('list');
+    const lista = screen.getByRole('listitem');
     expect(lista).toBeInTheDocument();
 })
